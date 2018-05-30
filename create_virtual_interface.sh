@@ -33,7 +33,7 @@
 
 
 
-if [[ $# -eq 2 ]] || [[ $# -eq 3 && "$3" = "-f" ]]; then
+if [ $# -eq 2 ] || [ $# -eq 3 && "$3" = "-f" ]; then
 	echo "$0  $@"
 else
         echo "usage: $0 <iface_name> <new_bridge_name> <optional '-f' to force recreation>";
